@@ -1,8 +1,11 @@
 {
   "name": "stroke",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Keyboard & Mouse Remote Control Solution",
   "main": "index.js",
+  "bin": {
+    "stroke": "./bin/stroke"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -12,5 +15,25 @@
   "dependencies": {
     "express": "*",
     "kbm-robot": "*"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/active9/stroke"
+  },
+  "keywords": [
+    "mouse",
+    "keyboard",
+    "server",
+    "control",
+    "remote",
+    "input",
+    "awt",
+    "bot",
+    "java"
+  ],
+  "bugs": {
+    "url": "https://github.com/active9/stroke/issues"
+  },
+  "homepage": "https://github.com/active9/stroke"
 }

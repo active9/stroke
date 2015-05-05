@@ -1,0 +1,55 @@
+<h1>Stroke Commands</h1>
+
+**/press/:key**<br />
+<a href="http://localhost.rocks:5703/press/a">
+http://localhost.rocks:5703/press/a
+</a><br />
+This would push down the a button on the hosts keyboard.
+<br /><br />
+**/release/:key**<br />
+<a href="http://localhost.rocks:5703/release/a">
+http://localhost.rocks:5703/release/a
+</a><br />
+This would release the a button from being pressed on the hosts keyboard.
+<br /><br />
+**/type/:key**<br />
+<a href="http://localhost.rocks:5703/type/a">
+http://localhost.rocks:5703/type/a
+</a><br />
+This will type a on the hosts keyboard.
+<br /><br />
+**/sleep/:mil**<br />
+<a href="http://localhost.rocks:5703/sleep/100">
+http://localhost.rocks:5703/sleep/100
+</a><br />
+This will make the command input on the host machine wait for 100 milliseconds.
+<br /><br />
+**/mouse/move/:x/:y**<br />
+<a href="http://localhost.rocks:5703/mouse/move/0/0">
+http://localhost.rocks:5703/mouse/move/0/0
+</a><br />
+This will move the hosts mouse to position 0,0 (Top Left of the Screen)
+<br /><br />
+**/mouse/press/:buttons**<br />
+<a href="http://localhost.rocks:5703/mouse/press/13">
+http://localhost.rocks:5703/mouse/press/13
+</a><br />
+This will press mouse buttons 1 and 3 at the same time on the host.
+<br /><br />
+**/mouse/release/:buttons**<br />
+<a href="http://localhost.rocks:5703/mouse/release/13">
+http://localhost.rocks:5703/mouse/release/13
+</a><br />
+This will release mouse buttons 1 and 3 at the same time on the host.
+<br /><br />
+**/mouse/press/:buttons/:delay**<br />
+<a href="http://localhost.rocks:5703/mouse/click/1/100">
+http://localhost.rocks:5703/mouse/click/1/100
+</a><br />
+This will click mouse button one with a 100ms delay before releasing on the host.
+<br /><br />
+**/mouse/wheel/:amount**<br />
+<a href="http://localhost.rocks:5703/mouse/wheel/100">
+http://localhost.rocks:5703/mouse/wheel/100
+</a><br />
+This will move the mouse wheel by an amount of 100 on the host machine.

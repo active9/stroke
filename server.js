@@ -1,11 +1,12 @@
 var express = require('express');
 var app = express();
-var robot = require("kbm-robot");
+var robot = require('kbm-robot');
+var path = require('path');
 
 robot.startJar();
 
 app.get('/', function (req, res) {
-	res.send('Hello World!');
+	res.sendFile(path.resolve("./assets/commands.html"));
 });
 
 app.get('/press/:key', function (req, res) {
@@ -49,7 +50,7 @@ app.get('/mouse/click/:buttons/:delay', function (req, res) {
 });
 
 app.get('/mouse/wheel/:amount', function (req, res) {
-	robot.mouseWhell(req.params.amount).go();
+	robot.mouseWheel(req.params.amount).go();
 	res.send('1');
 });
 

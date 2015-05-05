@@ -3,15 +3,8 @@
 
 A Keyboard & Mouse Remote Control Solution
 
-##USING
-Start stroke by calling after installing globally.
-```bash
-npm start stroke
-```
-Next view localhost:5703 to view a list of available commands.
-
 ##SECURITY
-Stroke does not provide any security mechanisms to secure the data channel with commands. In order to have a secured data channel you would need to fork the stroke repo from github and establish your own security measures.
+WARNING: Stroke does not provide any security mechanisms to secure the data channel with commands. In order to have a secured data channel you would need to fork the stroke repo from github and establish your own security measures.
 
 ##Introduction
 Stroke is a simple tcp/http server for interacting with Java AWT Bot class. This enables request based cursor & keyboard input to manipulate the host machines peripherals via http requests. In short Stroke is a Web Based Mouse & Keyboard Server.
@@ -20,10 +13,12 @@ Stroke is a simple tcp/http server for interacting with Java AWT Bot class. This
 ```bash
 npm install stroke -g
 ```
-
 ##USING
-
-Stroke is used as a stand-alone application. Now that you have Stroke installed you can visit http://localhost.rocks:5703/ to view all available remote keyboard & mouse commands. The calls to access stroke features are also listed below:
+Stroke is used as a stand-alone application. Now that you have Stroke installed you can start stroke by calling:
+```bash
+stoke
+```
+visit http://localhost.rocks:5703/ to view all available remote keyboard & mouse commands. The calls to access stroke features are also listed below:
 
 ##COMMANDS
 **/press/:key**
